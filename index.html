@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div>
+                    <label for="type_document">Tipo de Documento*</label>
+                    <input type="text" id="type_document" name="type_document">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="document_number">Numero de Documento*</label>
+                    <input type="text" id="document_number" name="document_number">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="name">Nombre*</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="first_last_name">Primer Apellido*</label>
+                    <input type="text" id="first_last_name" name="first_last_name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="second_last_name">Segundo Apellido</label>
+                    <input type="text" id="second_last_name" name="second_last_name">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Correo*</label>
+                    <input type="email" id="email">
+
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Password*</label>
+                    <input type="password" id="password">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="gender">Genero*</label>
+                    <br>
+                    <input type="radio" name="gender" id="gender-1" value="1">Femenino
+                    <input type="radio" name="gender" id="gender-2" value="2">Masculino
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="nationality">Nacionalidad*</label>
+                    <br>
+                    <select name="nationality" id="nationality" multiple size="2">
+                        <option value="" disabled>Seleccione..</option>
+                        <option value="1" selected>Colombiano</option>
+                        <option value="2">Venezolano</option>
+                        <option value="3">Musulman</option>
+                        <option value="4">Judio</option>
+                        <option value="5">Chileno</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="city">Ciudad*</label>
+                    <input list="city">
+                    <datalist id="city">
+                        <option value="" disabled>Seleccione..</option>
+                        <option value="1">Medellin</option>
+                        <option value="2">Bogotá</option>
+                        <option value="3">Barranquilla</option>
+                        <option value="4">Barrancabermeja</option>
+                        <option value="5">Cali</option>
+                        <option value="6">Sincelejo</option>
+                        <option value="7">Bello</option>
+                    </datalist>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="file">Hoja de vida</label>
+                    <br>
+                    <input type="file" id="file">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="mes">Tipos de Fecha</label>
+                    <input type="month">
+                    <input type="date">
+                    <input type="week">
+                    <input type="datetime-local">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gustos</legend>
+
+                <div>
+                    <label for="">Hobbies</label> <br>
+                    <input type="checkbox" name="hobby-1" id="hobby-1">Música
+                    <input type="checkbox" name="hobby-2" id="hobby-2">Pintar
+                    <input type="checkbox" name="hobby-3" id="hobby-3">Deporte
+                    <input type="checkbox" name="hobby-4" id="hobby-4">Leer
+                    <input type="checkbox" name="hobby-5" id="hobby-5">Bailar
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="passion">¿Qué le apasiona?</label><br>
+                    <textarea cols="30" rows="5" name="passion" id="passion">Describa..</textarea>
+                </div>
+
+            </fieldset>
+
+            <button type="button" onclick="alert('Hola')">Saludar</button>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#000000">
+                    <path
+                        d="M840-680v480q0 33-23.5 56.5T760-120H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h480l160 160Zm-80 34L646-760H200v560h560v-446ZM480-240q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM240-560h360v-160H240v160Zm-40-86v446-560 114Z" />
+                </svg>
+            </button>
+
+            <input type="submit" value="Guardar">
+
+        </form>
+    </div>
+</body>
+
+</html>
